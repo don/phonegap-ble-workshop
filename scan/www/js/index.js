@@ -27,6 +27,9 @@ var app = {
         deviceList.appendChild(listItem);
     },
     onError: function(reason) {
+        if (typeof reason === 'object') {
+            reason = JSON.stringify(reason);
+        }
         navigator.notification.alert(reason, null, 'Error');
     }
 };
