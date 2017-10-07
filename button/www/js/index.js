@@ -53,9 +53,9 @@ var app = {
         console.log(state);
 
         if (state === 0) {
-            statusDiv.innerHTML = 'Button is released.';
+            statusDiv.innerText = 'Button is released.';
         } else {
-            statusDiv.innerHTML = 'Button is pressed.';
+            statusDiv.innerText = 'Button is pressed.';
         }
     },
     disconnect: function(e) {

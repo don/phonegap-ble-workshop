@@ -32,7 +32,7 @@ var app = {
     },
     onConnect: function(peripheral) {
         var pre = document.querySelector('pre');
-        pre.innerHTML = JSON.stringify(peripheral, null, 2);
+        pre.innerText = JSON.stringify(peripheral, null, 2);
         app.peripheral = peripheral;
         app.showDetailPage();
     },
