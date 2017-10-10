@@ -1,3 +1,5 @@
 platforms
 plugins
+node_modules
+build.json
 .DS_Store

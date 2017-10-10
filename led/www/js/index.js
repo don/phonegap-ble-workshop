@@ -41,11 +41,13 @@ var app = {
         app.turnLedOff();
 
         // enable the io service
+        var data = new Uint8Array(1);
+        data[0] = 1;
         ble.write(
             peripheral.id,
             IO_SERVICE,
             CONFIGURATION_CHARACTERISTIC,
-            new Uint8Array([1]).buffer,
+            data.buffer,
             app.showDetailPage,
             app.onError
         );
